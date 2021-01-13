@@ -22,7 +22,7 @@ export function init() {
   colors = [green, red, yellow]
 }
 
-export function drawChromeBoiAtCoords(x, y) {
+export function drawChromeBoiAtCoords(b, u) {
   
   const canvas = document.querySelector("canvas") // sloppy but we haven't introduced lifecycle methods and canvas wouldn't be rendered
   const ctx = canvas.getContext("2d")
@@ -37,7 +37,7 @@ export function drawChromeBoiAtCoords(x, y) {
     img = def
   }
   
-  ctx.drawImage(img, x - cX - 50, y - cY - 80, sizeX, sizeY)
+  ctx.drawImage(img, b - cX - 50, u - cY - 80, sizeX, sizeY)
 }
 
 export function toggleCycling() {
